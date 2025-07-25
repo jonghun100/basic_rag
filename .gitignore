@@ -1,0 +1,18 @@
+# 포함할 파일들만 명시적으로 허용 (모든 파일에 ! 추가)
+*
+
+!loader.ipynb
+!muti_turn.ipynb
+!rag.ipynb
+!streaming.ipynb
+!.gitignore
+!README.md
+!requirements.txt
+
+# 하지만 이런 파일들은 절대 포함하지 않음
+.env
+__pycache__/
+*.pyc
+.DS_Store
+test_modified.pdf
+test.pdf
