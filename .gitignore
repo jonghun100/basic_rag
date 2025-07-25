@@ -1,18 +1,55 @@
-# 포함할 파일들만 명시적으로 허용 (모든 파일에 ! 추가)
-*
-
-!loader.ipynb
-!muti_turn.ipynb
-!rag.ipynb
-!streaming.ipynb
-!.gitignore
-!README.md
-!requirements.txt
-
-# 하지만 이런 파일들은 절대 포함하지 않음
-.env
+# Python 관련
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 환경 설정
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 시스템 파일
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# PDF 테스트 파일들
 test_modified.pdf
 test.pdf
+*.pdf
+
+# 데이터 파일들
+chunking/
+생성데이터/
+pdf_data_prep.py
+
+# 허용할 파일들은 명시적으로 추가하지 않아도 됨
+# 이미 추적되지 않는 파일들만 무시됨
